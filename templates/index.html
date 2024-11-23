@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="{{ url_for('static', filename='style.css') }}"
+      rel="stylesheet"
+    />
+    <title>CS218 homework-1</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <article>
+        <header class="post-header">
+          <h2>CS218 homework-1</h2>
+
+          <p id="author">
+            Finished by <strong>Lifan Zeng</strong> on Friday, October 11st 2024
+          </p>
+
+          <img
+            src="{{url_for('static', filename='post-img.jpg')}}"
+            width="500"
+            height="200"
+            class="post-img"
+          />
+        </header>
+
+        <h3>Requirement:</h3>
+        <p>
+          Write a Rest based Api that will respond to the following types of
+          queries:
+        </p>
+
+        <ol>
+          <li>The first query will indicate how busy the CPU is</li>
+          <li>
+            The second query will indicate how much memory the machine has used
+          </li>
+          <li>
+            The third query will indicate how much disk space has been used
+          </li>
+          <li>
+            The fourth query will indicate how much bandwidth is being used
+          </li>
+        </ol>
+
+        <p>
+          <strong>Here is the link to show the result of REST Api:</strong>
+        </p>  
+
+        <ul>
+          <li>
+            <a href="cpu_percent">How busy the CPU is?</a>
+          </li>
+
+          <li>
+            <a href="/used_mem/">How much memory the machine has used?</a>
+          </li>
+          <li>
+            <a href="/used_disk/">How much disk space has been used?</a>
+          </li>
+          <li>
+            <a href="/enx0_bandwidth/">How much bandwidth is being used?</a>
+          </li>
+        </ul>
+
+
+      <footer>
+        <p>
+          Copyright &copy; 2024 by Lifan Zeng
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
